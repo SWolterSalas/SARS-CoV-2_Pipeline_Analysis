@@ -7,18 +7,18 @@ MetaSUB-CoV2 analysis
 Bibliographic search of human respiratory RNA viruses. Taxas found in the NCBI database:
 
 * SARS (ti|694009)
-SARS CoV-2 (ti|2697049)
-Coronavirus NL63 (ti|277944)
-Coronavirus 229E (ti|11137)
-Rhinovirus A (ti|147711)
-Coronavirus HKU1 (ti|290028)
-Rinhoviurs C (ti|463676)
-Betacoronavirus 1 (ti|694003)	
-Influenza A (ti|11320)
-Influenza C (ti|11552)
-Metapneumovirus (ti|162146)
-Orthorubulavirus 4 (ti|1979161)
-MERS (ti|1335626)
+* SARS CoV-2 (ti|2697049)
+* Coronavirus NL63 (ti|277944)
+* Coronavirus 229E (ti|11137)
+* Rhinovirus A (ti|147711)
+* Coronavirus HKU1 (ti|290028)
+* Rinhoviurs C (ti|463676)
+* Betacoronavirus 1 (ti|694003)	
+* Influenza A (ti|11320)
+* Influenza C (ti|11552)
+* Metapneumovirus (ti|162146)
+* Orthorubulavirus 4 (ti|1979161)
+* MERS (ti|1335626)
 
 The first database was using the Pathoscope LIB tool, using the taxids: 
 
