@@ -2,6 +2,8 @@
 
 MetaSUB-CoV2 analysis 
 
+### Database
+
 Bibliographic search of human respiratory RNA viruses. Taxas found in the NCBI database:
 
 *SARS (ti|694009)
@@ -26,6 +28,8 @@ In addition, it was checked that the viruses did indeed correspond to human resp
 
 01_taxid_DB.sh
 
+### Quality Control
+
 All data was downloaded from Pangea (https://pangea.gimmebio.com/sample-groups/8c1fce17-1f4c-4770-bea0-b63660c56957). After downloading the files, a directory was created containing all the "fq" files with the "raw reads". It was analyzed using FastaQC and MultiQC to generate a quality control and determine the trimming parameters, using the following script:
 
 02_quality_control.sh
@@ -35,6 +39,8 @@ Trimming was carried out using Trim Galore! and the quality was verified through
 03_trimming.sh
 
 In the first instance, with the Bowtie2 tool, the indexes for the reference genomes of Respiratory RNA Viruses, human genome and phages were generated with the following script:
+
+### Pathoscope
 
 04_index_DB.sh
 
@@ -47,6 +53,8 @@ Obtained SAM files from Pathoscope were converted to fq files with the following
 06_sam_to_fq.sh
 
 To align the reads, Bowtie2 was used against the Wuhan reference genome described in NCBI and the script was used:
+
+### SARS CoV 2 Alignment
 
 07_alignment.sh
  
@@ -63,6 +71,8 @@ With the fasta sequences of the samples that passed the control, the correspondi
 10_lineages.sh
 
 Once our metadata is obtained, the COVID-19 metadata is downloaded directly from Pangea in Santiago, and all the sampling information is obtained only for those samples that approved the final quality control through the following script:
+
+### Analysis for Phylogeny and Taxonomic Abundance
 
 11_management_metadata.sh
 
@@ -82,6 +92,8 @@ clade_frequencies.R
 The metadatas with the emerging lineages that were obtained from Nextstrain using this script were also corrected:
 
 15_correcting_lineages.sh
+
+### Tree file
 
 Finally, an exclusive folder is made to perform phylogenetic analyzes with the tree obtained from Nextstrain:
 
