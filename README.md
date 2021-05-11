@@ -4,7 +4,8 @@ MetaSUB-CoV2 analysis
 
 Bibliographic search of human respiratory RNA viruses. Taxas found in the NCBI database:
 
-SARS (ti|694009)\n
+SARS (ti|694009)
+
 SARS CoV-2 (ti|2697049)
 Coronavirus NL63 (ti|277944)
 Coronavirus 229E (ti|11137)
