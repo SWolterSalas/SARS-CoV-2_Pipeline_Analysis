@@ -1,0 +1,1 @@
+In this folder you should move your sam files after pathoid analysis
