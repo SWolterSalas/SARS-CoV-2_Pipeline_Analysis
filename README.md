@@ -38,9 +38,9 @@ Trimming was carried out using Trim Galore! and the quality was verified through
 
 03_trimming.sh
 
-In the first instance, with the Bowtie2 tool, the indexes for the reference genomes of Respiratory RNA Viruses, human genome and phages were generated with the following script:
-
 ### Pathoscope
+
+In the first instance, with the Bowtie2 tool, the indexes for the reference genomes of Respiratory RNA Viruses, human genome and phages were generated with the following script:
 
 04_index_DB.sh
 
@@ -52,9 +52,9 @@ Obtained SAM files from Pathoscope were converted to fq files with the following
 
 06_sam_to_fq.sh
 
-To align the reads, Bowtie2 was used against the Wuhan reference genome described in NCBI and the script was used:
-
 ### SARS CoV 2 Alignment
+
+To align the reads, Bowtie2 was used against the Wuhan reference genome described in NCBI and the script was used:
 
 07_alignment.sh
  
@@ -66,13 +66,13 @@ A final quality control was applied, and a consensus was established for a “qu
 
 09_filter.sh
 
+### Analysis for Phylogeny and Taxonomic Abundance
+
 With the fasta sequences of the samples that passed the control, the corresponding lineages were obtained through pangolin and this column was added to the file with the statistics of the rescued genomes with the script called:
 
 10_lineages.sh
 
 Once our metadata is obtained, the COVID-19 metadata is downloaded directly from Pangea in Santiago, and all the sampling information is obtained only for those samples that approved the final quality control through the following script:
-
-### Analysis for Phylogeny and Taxonomic Abundance
 
 11_management_metadata.sh
 
