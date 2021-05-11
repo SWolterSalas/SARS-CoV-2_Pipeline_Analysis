@@ -13,7 +13,7 @@ ls > lista.list
 
 cat lista.list | while read lines; do mv ./$lines/$lines*.fastq.gz ./ ; done # This line will make a list and mv it to 01_backup
 
-fastq ./* -t 6 
+fastqc ./* -t 6 
 multiqc ./*
 
 cd ../
