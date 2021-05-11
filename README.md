@@ -30,6 +30,7 @@ In addition, it was checked that the viruses did indeed correspond to human resp
 
 01_taxid_DB.sh
 
+----------------------------------------------------------------
 ### Quality Control
 
 All data was downloaded from Pangea (https://pangea.gimmebio.com/sample-groups/8c1fce17-1f4c-4770-bea0-b63660c56957). After downloading the files, a directory was created containing all the "fq" files with the "raw reads". It was analyzed using FastaQC and MultiQC to generate a quality control and determine the trimming parameters, using the following script:
@@ -40,6 +41,7 @@ Trimming was carried out using Trim Galore! and the quality was verified through
 
 03_trimming.sh
 
+----------------------------------------------------------------
 ### Pathoscope
 
 In the first instance, with the Bowtie2 tool, the indexes for the reference genomes of Respiratory RNA Viruses, human genome and phages were generated with the following script:
@@ -54,6 +56,7 @@ Obtained SAM files from Pathoscope were converted to fq files with the following
 
 06_sam_to_fq.sh
 
+----------------------------------------------------------------
 ### SARS CoV 2 Alignment
 
 To align the reads, Bowtie2 was used against the Wuhan reference genome described in NCBI and the script was used:
@@ -68,6 +71,7 @@ A final quality control was applied, and a consensus was established for a “qu
 
 09_filter.sh
 
+----------------------------------------------------------------
 ### Analysis for Phylogeny and Taxonomic Abundance
 
 With the fasta sequences of the samples that passed the control, the corresponding lineages were obtained through pangolin and this column was added to the file with the statistics of the rescued genomes with the script called:
@@ -95,6 +99,7 @@ The metadatas with the emerging lineages that were obtained from Nextstrain usin
 
 15_correcting_lineages.sh
 
+----------------------------------------------------------------
 ### Tree file
 
 Finally, an exclusive folder is made to perform phylogenetic analyzes with the tree obtained from Nextstrain:
