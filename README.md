@@ -21,9 +21,9 @@ Bibliographic search of human respiratory RNA viruses. Taxas found in the NCBI d
 * MERS (ti|1335626)
 
 The first database was using the Pathoscope LIB tool, using the taxids: 
-
+```
 pathoscope LIB -genomeFile /path/file/nt.fasta -taxonIds 694009,2697049,277944,11137,147711,290028,463676,694003,11320,11552,162146,1979161,1335626 --subTax -outPre x virus 
-
+```
 In addition, it was checked that the viruses did indeed correspond to human respiratory RNA viruses, looking for headers that contained the names of these viruses. This is because the tax ids were not debugged and they give us genomes that do not correspond to respiratory RNA viruses, which is why the following script was used:
 
 ```
