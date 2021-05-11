@@ -1,6 +1,6 @@
 # SARS-CoV-2_Pipeline_Analysis
 
-MetaSUB-CoV2 analysis 
+## MetaSUB-CoV2 analysis 
 
 ### Database
 
@@ -19,8 +19,6 @@ Bibliographic search of human respiratory RNA viruses. Taxas found in the NCBI d
 * Metapneumovirus (ti|162146)
 * Orthorubulavirus 4 (ti|1979161)
 * MERS (ti|1335626)
-
-----------------------------------------------------------------
 
 The first database was using the Pathoscope LIB tool, using the taxids: 
 
