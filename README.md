@@ -26,7 +26,9 @@ pathoscope LIB -genomeFile /path/file/nt.fasta -taxonIds 694009,2697049,277944,1
 
 In addition, it was checked that the viruses did indeed correspond to human respiratory RNA viruses, looking for headers that contained the names of these viruses. This is because the tax ids were not debugged and they give us genomes that do not correspond to respiratory RNA viruses, which is why the following script was used:
 
+\begin
 01_taxid_DB.sh
+\end
 
 ----------------------------------------------------------------
 ### Quality Control
