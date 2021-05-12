@@ -18,12 +18,12 @@ cd /01_backup/
 for archivo in $INPUT
 do
 	TEXTO=${archivo%.raw__raw_reads.read_*} # Be careful to change this if you have another name for your file
-	trim_galore -q 25 --length 50 -j 16 --trim-n -o ../03_trimming --paired $TEXTO\.raw__raw_reads.read_1.fastq.gz $TEXTO\.raw__raw_reads.read_2.fastq.gz
+	trim_galore -q 25 --length 50 -j 8 --trim-n -o ../03_trimming --paired $TEXTO\.raw__raw_reads.read_1.fastq.gz $TEXTO\.raw__raw_reads.read_2.fastq.gz
 done
 
 cd ../03_trimming
 
-fastq ./* -t 6
+fastq ./* -t 8
 multiqc ./*
 
 cd ../
