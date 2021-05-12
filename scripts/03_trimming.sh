@@ -5,7 +5,8 @@
 
 # The input is the characteristic name of every file of your analysis
 
-INPUT=$1 # Example: "BC-*.fastq.gz" | Complete name of file: "BC-0345795864.raw__raw_reads.read_1.fastq.gz"
+INPUT=$1 # Example: "BC-*.fastq.gz" | Complete name of file: "BC-0345795864.raw__raw_reads.read_1.fastq.gz" . Be sure of putting the first
+# file only as INPUT of the paired files (do NOT consider the second file as the INPUT)
 
 cd ../analisis/
 
