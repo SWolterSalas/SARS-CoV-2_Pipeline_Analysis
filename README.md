@@ -106,3 +106,5 @@ Finally, an exclusive folder is made to perform phylogenetic analyzes with the t
 ```
 16_files_for_tree.sh
 ```
+
+Pipeline Mainteiner: Dr.(c) Sebastian Wolter-Salas
